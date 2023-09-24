@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #2935d1;
+    --secondary-color: #e3e3e3;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+.border-rounded {
+    border: 1px solid #000; /* ou qualquer cor de borda que você queira */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@keyframes pulseUnderline2 {
+    0% {
+        width: 0;
+        left: 50%; /* Começa no meio */
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.caption-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: darkblue;
+    animation: pulseUnderline2 2s forwards; /* A animação rodará uma vez e permanecerá no último frame */
+}
+
+
+.txt-title {
+    font-size: 3.5rem;
+}
+
+.btn-ac-center {
+    display: block;
+}
+
+.silver-btn:not(.collapsed) {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    transform: scale(1.1);
+    font-weight: bold;
+    
+}
+
+.accordion-item {
+    border-color: rgba(0, 0, 255, 0.545);
+}
+
+
+.btn-proje {
+    color: #ffffff6c;
+    font-size: 1rem ;
+}
+
+.accordion-button .bi {
+    display: block; /* Faça o ícone se comportar como um elemento de bloco */
+    margin-top: 5px; /* Espaçamento entre o texto e o ícone */
+}
+
+
+.btn-proje:not(.collapsed) {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    transform: scale(1.1);
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.btn-silver-assinar:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-gold-assinar:hover {
+    background-color: transparent;
+    border-color: #ffc107;
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.btn-platinum-assinar:hover {
+    background-color: transparent;
+    border-color: #0dcaf0;
+    color: #0dcaf0;
+    font-weight: bold;
+}
+
+
+
+.gold-btn:not(.collapsed) {
+    background-color: #ffc107;
+    color: #000000;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+
+.gold-btn:not(.collapsed) .text-warning {
+    color: #000000 !important; 
+}
+
+.platinum-btn:not(.collapsed) {
+    background-color: #0dcaf0;
+    color: #000000;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.platinum-btn:not(.collapsed) .text-info {
+    color: #000000 !important; 
+}
+
+.txt-svg {
+    font-size: 4rem;
+    margin-top: 6rem;
+    font-weight: 1000;
+}
+
+.lista-final:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.lista-final {
+    padding-bottom: 0.2rem;
+    transition: color 2s ease, transform 1s ease;
+}
+
+.ul-custom {
+    list-style-type: none; /* Remove o marcador de lista padrão */
+    padding-left: 0;       /* Remova o padding padrão */
+}
+
+.li-custom {
+    position: relative; 
+    padding-left: 25px;   /* Espaço para o marcador customizado */
+}
+
+/* Cria um marcador customizado com o pseudo-elemento ::before */
+.li-custom::before {
+    content: '•'; /* Caractere de bullet point */
+    position: absolute;
+    left: 0;      /* Posiciona o marcador no início do item */
+    font-size: 20px; /* Ajuste conforme necessário */
+    transition: color 0.3s; /* Efeito de transição ao alterar a cor */
+}
+
+/* Muda a cor do marcador customizado ao passar o mouse sobre o <li> */
+.li-custom:hover::before {
+    color: rgba(0, 153, 255, 0.975); /* Ajuste para a cor desejada */
+}
+
+.li-custom:hover span {
+    color: rgba(0, 153, 255, 0.975);
+    transition: color 0.5s ease;
+}
+
+.svg-pq {
+    margin-left: 2rem;
+    margin-top: 4.5rem;
+}
+
+.txt-margem {
+    margin-bottom: 6rem;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;  /* ou qualquer cor que você preferir */
+    text-align: center;
+}
+
+.btn-videofinal {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2em;  /* ou qualquer tamanho que você preferir */
+}
+
+.icon-vid {
+    display: inline-block;
+    font-size: 5rem;
+    padding: 1rem;
+    transition: color 0.5s ease, transform 0.5s ease;
+    color: white;
+}
+
+
+.icon-vid:hover {
+    color: #323fed;
+    transform: scale(1.4);
+}
