@@ -1,4 +1,4 @@
-/* Cores Primárias */
+/* CORES PRIMARIAS */
 :root {
     --primary-color: #2935d1;
     --secondary-color: #e3e3e3;
@@ -6,7 +6,7 @@
     --black-color: #000000;
 }
 
-/* Animações CSS */
+/* ANIMAÇÕES */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -46,14 +46,14 @@
 }
 
 
-/* Sobreescrever cor do link ativo no Bootstrap */
+/* OVERWRITE NA COR DO LINK ATIVO NO BS */
 .nav-link:active,
 .nav-link:focus,
 .nav-link:visited {
     color: var(--white-color);
 }
 
-/* Estilos da barra de rolagem do site */
+/* ESTILOS DA BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -73,7 +73,7 @@
     border-radius: 4px;
 }
 
-/* Estilos Gerais */
+/* ESTILOS GERAIS */
 html {
     scroll-behavior: smooth;
 }
@@ -89,7 +89,7 @@ body .container-img-next .img-next {
     object-fit: cover;
 }
 
-/* Estilos para os títulos das seções */
+/* ESTILOS PARA OS TITULOS DAS SECOES */
 .section-title {
     position: relative;
     text-align: center;
@@ -97,7 +97,6 @@ body .container-img-next .img-next {
     padding-bottom: 5px;
     font-size: 2.5em;
     text-shadow: 0 7px 7px rgb(0, 0, 255);
-    /* Sombra reta para baixo */
     overflow: hidden;
 }
 
@@ -114,7 +113,7 @@ body .container-img-next .img-next {
 }
 
 
-/* Cores e Variáveis Comuns */
+/* CORES E VARIAVEIS */
 :root {
     --color-white-transparent: rgba(255, 255, 255, 0.597);
     --color-white-very-transparent: rgba(255, 255, 255, 0.242);
@@ -122,7 +121,7 @@ body .container-img-next .img-next {
     --shadow-color-effect: 0 0 15px #0d00ff, 0 0 20px #007bff, 0 0 25px #4000ff, 0 0 30px #0270ff, 0 0 35px #2870ff;
 }
 
-/* Estilos da Barra de Navegação */
+/* ESTILOS PARA A BARRA DE NAVEGAÇÃO */
 .icon-text {
     display: none;
     position: absolute;
@@ -162,11 +161,6 @@ body .container-img-next .img-next {
     color: var(--color-white);
 }
 
-/* .navbar {
-    animation: fadeIn 3s forwards 2s;
-    opacity: 0;
-} */
-
 .navbar.bg-body-tertiary {
     background-color: transparent !important;
     position: fixed;
@@ -184,62 +178,7 @@ body .container-img-next .img-next {
     filter: invert(1);
 }
 
-
-
-
-/* Estilos adicionais, se necessário */
-.navbar.bg-body-tertiary {
-    background-color: transparent !important;
-}
-
-
-
-.nav-link {
-    position: relative;
-    color: var(--color-white-transparent);
-    transition: transform 1s ease, box-shadow 1s ease;
-    border-radius: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.nav-link:hover {
-    box-shadow: var(--shadow-color-effect);
-    border-radius: 25px;
-    transform: scale(1.3);
-    transition: box-shadow 0.5s ease, transform 1s ease;
-    color: var(--color-white);
-}
-
-.nav-link:hover .icon-text {
-    display: block;
-    color: var(--color-white);
-}
-
-/* .navbar {
-    animation: fadeIn 3s forwards 2s;
-    opacity: 0;
-} */
-
-.navbar.bg-body-tertiary {
-    background-color: transparent !important;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-.navbar-toggler {
-    border-color: white;
-    margin-left: 1rem;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-
-/* Estilos da Primeira Seção (Onda, Logo e Texto) */
+/* ESTILOS PARA A PRIMEIRA SEÇÃO (LOGO, ONDA E TEXTO) */
 .onda {
     width: 100%;
     height: 100vh;
@@ -327,7 +266,7 @@ body .container-img-next .img-next {
 }
 
 
-/* ESTILOS DO TEXTO DO CARROSSEL */
+/* ESTILOS DO TEXTO DO CARROSSEL E DOS INDICADORES*/
 .text-meio {
     color: #aeaeae;
 }
@@ -342,32 +281,24 @@ body .container-img-next .img-next {
 
 .carousel-indicators {
     bottom: 2.5px;
-    /* Ajuste este valor conforme necessário */
     position: absolute;
 }
 
 .carousel-indicators .active {
     background-color: rgb(26, 26, 253);
-    /* Altere para a cor desejada */
 }
 
-/* Aumentar a grossura dos indicadores */
 .carousel-indicators [data-bs-target] {
     width: 10px;
-    /* Ajuste conforme necessário */
     height: 10px;
-    /* Ajuste conforme necessário */
     border-radius: 50%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-/* Ajustar a grossura do indicador ativo se necessário */
 .carousel-indicators .active {
     width: 12px;
-    /* Ajuste conforme necessário */
     height: 12px;
-    /* Ajuste conforme necessário */
 }
 
 
@@ -608,14 +539,12 @@ body .container-img-next .img-next {
 /* BOTAO VOLTAR PARA O INICIO */
 .btn-final {
     transition: transform 1s ease, color 1s ease;
-    /* Efeito de transição suave */
     color: grey;
     font-size: 1.3rem;
 }
 
 .btn-final:hover {
     transform: scale(1.3);
-    /* Aumenta o botão em 10% */
     color: white;
 }
 
@@ -689,30 +618,22 @@ footer a:hover {
 }
 
 
-
+/* ESTILOS PARA O TEXTO DE INTRODUÇÃO DA PAGINA */
 .txt-intro {
     display: inline-block;
     position: relative;
-    /* Para posicionar o pseudo-elemento em relação a este container */
     transition: transform 1s ease;
 }
 
 .txt-intro::after {
     content: "";
-    /* Pseudo-elemento requer um conteúdo, mesmo que vazio */
     position: absolute;
     bottom: 0;
-    /* Posicionar no fundo do elemento */
     left: 50%;
-    /* Centralizar o início da linha */
     height: 2px;
-    /* Altura da linha */
     width: 0;
-    /* Comece sem nenhuma largura */
     background-color: blue;
-    /* Cor da linha */
     transition: width 0.3s ease, left 0.3s ease;
-    /* Animação suave da linha */
 }
 
 .txt-intro:hover {
@@ -722,7 +643,5 @@ footer a:hover {
 
 .txt-intro:hover::after {
     width: 100%;
-    /* Estende até as bordas */
     left: 0;
-    /* Alinha à borda esquerda */
 }

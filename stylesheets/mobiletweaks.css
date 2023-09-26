@@ -1,6 +1,6 @@
-/* ESSA STYLESHET É PARA GARANTIR QUE ELEMENTOS FUNCIONEM COMO DEVERIAM EM TELAS MENORES */
+                                            /* ESSA STYLESHET É PARA GARANTIR QUE ELEMENTOS FUNCIONEM COMO DEVERIAM EM TELAS MENORES */
 @media (max-width: 768px) {
-    /* Text and Font Styles */
+/* ESTILOS DE FONTE E TEXTOS */
     .text-box-subtitle {
         font-size: 0.8rem;
         margin-top: 0;
@@ -34,7 +34,7 @@
         margin-bottom: 0;
     }
 
-    /* Margin & Padding Adjustments */
+/* AJUSTES DE PADDING E MARGEM */
     .text-aphelios,
     .icon-aphelios {
         margin-left: 0.3vh;
@@ -63,10 +63,10 @@
         margin-bottom: 30px;
     }
     .d-flex a:not(:last-child) {
-        margin-right: 10px;  /* ou qualquer outro valor que pareça bom */
+        margin-right: 10px; 
     }
     
-    /* Display & Positioning Adjustments */
+/* AJUSTES DE POSIÇÃO E DISPLAY */
     .container-cards {
         display: flex;
         flex-direction: column;
@@ -144,7 +144,7 @@
     .carousel-indicators .active {
         position: sticky;
     }
-    /* Hover Effects & Transitions */
+/* EFEITOS DE HOVER E TRANSIÇÕES */
     .nav-link:hover {
         box-shadow: none;
         border-radius: 0;
@@ -157,7 +157,7 @@
         color: var(--color-white);
     }
     
-    /* Icon & Media Styles */
+/* ESTILOS DE MIDIA E DOS ICONES */
     .icon-vid {
         font-size: 1.25rem;
     }
@@ -170,7 +170,7 @@
         margin-left: 1rem;
     }
 
-    /* Form Styles */
+/* ESTILOS DO FORM */
     .form-control {
         font-size: 0.1rem;
     }
