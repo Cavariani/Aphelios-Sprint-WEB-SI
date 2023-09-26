@@ -96,7 +96,8 @@ body .container-img-next .img-next {
     color: var(--white-color);
     padding-bottom: 5px;
     font-size: 2.5em;
-    text-shadow: 0 7px 7px rgb(0, 0, 255); /* Sombra reta para baixo */
+    text-shadow: 0 7px 7px rgb(0, 0, 255);
+    /* Sombra reta para baixo */
     overflow: hidden;
 }
 
@@ -133,11 +134,62 @@ body .container-img-next .img-next {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 0.7rem;
-
 }
 
 .icon-nav {
     color: white;
+}
+
+.nav-link {
+    position: relative;
+    color: var(--color-white-transparent);
+    transition: transform 1s ease, box-shadow 1s ease;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    box-shadow: var(--shadow-color-effect);
+    border-radius: 25px;
+    transform: scale(1.3);
+    transition: box-shadow 0.5s ease, transform 1s ease;
+    color: var(--color-white);
+}
+
+.nav-link:hover .icon-text {
+    display: block;
+    color: var(--color-white);
+}
+
+/* .navbar {
+    animation: fadeIn 3s forwards 2s;
+    opacity: 0;
+} */
+
+.navbar.bg-body-tertiary {
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-toggler {
+    border-color: white;
+    margin-left: 1rem;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+
+/* Estilos adicionais, se necessário */
+.navbar.bg-body-tertiary {
+    background-color: transparent !important;
 }
 
 
@@ -640,19 +692,27 @@ footer a:hover {
 
 .txt-intro {
     display: inline-block;
-    position: relative;  /* Para posicionar o pseudo-elemento em relação a este container */
+    position: relative;
+    /* Para posicionar o pseudo-elemento em relação a este container */
     transition: transform 1s ease;
 }
 
 .txt-intro::after {
-    content: "";  /* Pseudo-elemento requer um conteúdo, mesmo que vazio */
+    content: "";
+    /* Pseudo-elemento requer um conteúdo, mesmo que vazio */
     position: absolute;
-    bottom: 0;  /* Posicionar no fundo do elemento */
-    left: 50%;  /* Centralizar o início da linha */
-    height: 2px;  /* Altura da linha */
-    width: 0;  /* Comece sem nenhuma largura */
-    background-color: blue;  /* Cor da linha */
-    transition: width 0.3s ease, left 0.3s ease;  /* Animação suave da linha */
+    bottom: 0;
+    /* Posicionar no fundo do elemento */
+    left: 50%;
+    /* Centralizar o início da linha */
+    height: 2px;
+    /* Altura da linha */
+    width: 0;
+    /* Comece sem nenhuma largura */
+    background-color: blue;
+    /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease;
+    /* Animação suave da linha */
 }
 
 .txt-intro:hover {
@@ -661,6 +721,8 @@ footer a:hover {
 }
 
 .txt-intro:hover::after {
-    width: 100%;  /* Estende até as bordas */
-    left: 0;  /* Alinha à borda esquerda */
+    width: 100%;
+    /* Estende até as bordas */
+    left: 0;
+    /* Alinha à borda esquerda */
 }
